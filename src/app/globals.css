@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .table-height {
+        height: calc(100vh - 200px);
+    }
+}
