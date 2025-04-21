@@ -7,7 +7,8 @@ import Breadcrumb from '@/components/breadcrumb';
 import ReactQueryProvider from '@/providers/ReactQueryProvider';
 
 const poppins = Poppins({
-    weight: ['400']
+    weight: ['400'],
+    subsets: ['latin']
 }) ;
 
 export const metadata: Metadata = {
