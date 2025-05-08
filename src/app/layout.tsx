@@ -21,10 +21,10 @@ export default function RootLayout({children,}: Readonly<{ children: ReactNode }
       <body className={`${poppins.className} antialiased`}>
         <div className={`flex`}>
             <Sidebar />
-            <div className={`w-full p-3`}>
+            <div className={`w-full space-y-3`}>
                 <Breadcrumb />
                 <ReactQueryProvider>
-                    <div className={`h-screen pt-5 overflow-y-auto`}>
+                    <div className={`page-height px-5 py-2 overflow-y-auto`}>
                         {children}
                     </div>
                 </ReactQueryProvider>

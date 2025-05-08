@@ -8,6 +8,8 @@ import { useMutation } from '@tanstack/react-query';
 import { packOrders, Order, PackedOrder } from '@/actions/packOrders';
 import parsePackedOrders from '@/utils/parsedPackedOrders';
 
+import type { ParseResult } from 'papaparse';
+
 const Page = () => {
     const inputRef = useRef<HTMLInputElement>(null);
     const [data, setData] = useState<Order[]>([]);
@@ -35,7 +37,7 @@ const Page = () => {
             header: true,
             skipEmptyLines: true,
             transformHeader: (h) => h.trim(),
-            complete: (results: any) => {
+            complete: (results: ParseResult<Order>) => {
                 setData(results.data);
             },
         });

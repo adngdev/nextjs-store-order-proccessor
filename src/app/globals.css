@@ -5,7 +5,10 @@
 
 @layer utilities {
     .table-height {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 300px);
+    }
+    .page-height {
+        height: calc(100vh - 50px);
     }
 }
 
