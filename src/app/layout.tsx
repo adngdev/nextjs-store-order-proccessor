@@ -24,7 +24,7 @@ export default function RootLayout({children,}: Readonly<{ children: ReactNode }
             <div className={`w-full p-3`}>
                 <Breadcrumb />
                 <ReactQueryProvider>
-                    <div className={`pt-5`}>
+                    <div className={`h-screen pt-5 overflow-y-auto`}>
                         {children}
                     </div>
                 </ReactQueryProvider>

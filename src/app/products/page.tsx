@@ -25,7 +25,7 @@ const Page = () => {
                     <p>Width <span className={`text-2xs italic`}>(mm)</span></p>
                     <p>Height <span className={`text-xs italic`}>(mm)</span></p>
                     <p>Length <span className={`text-xs italic`}>(mm)</span></p>
-                    <p>Weight <span className={`text-xs italic`}>(mm)</span></p>
+                    <p>Weight <span className={`text-xs italic`}>(kg)</span></p>
                 </div>
                 <div className={`table-height space-y-0.5 overflow-y-auto`}>
                     { data ?
